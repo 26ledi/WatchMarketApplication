@@ -1,0 +1,14 @@
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\bin\Debug\net8.0\WatchMarketApp.DataAccess.deps.json
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\bin\Debug\net8.0\WatchMarketApp.DataAccess.runtimeconfig.json
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\bin\Debug\net8.0\WatchMarketApp.DataAccess.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\bin\Debug\net8.0\WatchMarketApp.DataAccess.pdb
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.csproj.AssemblyReference.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.AssemblyInfoInputs.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.AssemblyInfo.cs
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\refint\WatchMarketApp.DataAccess.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.pdb
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.genruntimeconfig.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\ref\WatchMarketApp.DataAccess.dll

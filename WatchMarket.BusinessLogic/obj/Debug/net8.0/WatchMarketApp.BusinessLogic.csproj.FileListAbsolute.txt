@@ -1,0 +1,15 @@
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\bin\Debug\net8.0\WatchMarketApp.BusinessLogic.deps.json
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\bin\Debug\net8.0\WatchMarketApp.BusinessLogic.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\bin\Debug\net8.0\WatchMarketApp.BusinessLogic.pdb
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\bin\Debug\net8.0\WatchMarketApp.DataAccess.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\bin\Debug\net8.0\WatchMarketApp.DataAccess.pdb
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.csproj.AssemblyReference.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.AssemblyInfoInputs.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.AssemblyInfo.cs
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMar.C41D9363.Up2Date
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\refint\WatchMarketApp.BusinessLogic.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.pdb
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\ref\WatchMarketApp.BusinessLogic.dll

@@ -1,0 +1,11 @@
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\bin\Debug\net8.0\WatchMarket.BusinessLogic.deps.json
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\bin\Debug\net8.0\WatchMarket.BusinessLogic.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\bin\Debug\net8.0\WatchMarket.BusinessLogic.pdb
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarket.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarket.BusinessLogic.AssemblyInfoInputs.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarket.BusinessLogic.AssemblyInfo.cs
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarket.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarket.BusinessLogic.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\refint\WatchMarket.BusinessLogic.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarket.BusinessLogic.pdb
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\ref\WatchMarket.BusinessLogic.dll
