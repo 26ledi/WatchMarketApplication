@@ -8,5 +8,6 @@ namespace WatchMarket.BusinessLogic.Interfaces
         Task<UserDto> UpdateUserAsync(UserDto user);
         Task DeleteUserAsync(string email);
         Task<List<UserDto>> GetAllUsersAsync();
+        Task<string> LoginAsync(UserDto userLogin);
     }
 }

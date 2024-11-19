@@ -7,10 +7,12 @@ namespace WatchMarketApp.BusinessLogic.Services
     public class OrderDetailService : IOrderDetailService
     {
         private readonly IBaseRepository<OrderDetail> _orderDetailRepository;
+        private readonly IBaseRepository<Price> _priceRepository;
 
-        public OrderDetailService(IBaseRepository<OrderDetail> orderDetailRepository)
+        public OrderDetailService(IBaseRepository<OrderDetail> orderDetailRepository, IBaseRepository<Price> priceRepository)
         {
             _orderDetailRepository = orderDetailRepository;
+            _priceRepository = priceRepository;
         }
         public async Task<OrderDetailDto> CreateAsync(OrderDetailDto orderDetailDto)
         {
@@ -18,7 +20,7 @@ namespace WatchMarketApp.BusinessLogic.Services
             {
                 OrderId = orderDetailDto.OrderId,
                 Quantity = orderDetailDto.Quantity,
-                Price = orderDetailDto.Price,
+                Price = GetFinalSum(orderDetailDto.Quantity, orderDetailDto.Price),
                 WatchId = orderDetailDto.WatchId
             };
 
@@ -28,7 +30,7 @@ namespace WatchMarketApp.BusinessLogic.Services
             {
                 OrderId = orderDetailDto.OrderId,
                 Quantity = orderDetailDto.Quantity,
-                Price = orderDetailDto.Price,
+                Price = newOrderDetail.Price,
                 WatchId = orderDetailDto.WatchId
             };
         }
@@ -63,8 +65,8 @@ namespace WatchMarketApp.BusinessLogic.Services
 
             orderDetailLooked.OrderId = orderDetailDto.OrderId;
             orderDetailLooked.Quantity = orderDetailDto.Quantity;
-            orderDetailDto.Price = orderDetailDto.Price;
-            orderDetailDto.WatchId = orderDetailDto.WatchId;
+            orderDetailLooked.Price = GetFinalSum(orderDetailDto.Quantity, orderDetailDto.Price);
+            orderDetailLooked.WatchId = orderDetailDto.WatchId;
 
             var updatedOrderDetail = await _orderDetailRepository.UpdateAsync(orderDetailLooked);
 
@@ -75,6 +77,13 @@ namespace WatchMarketApp.BusinessLogic.Services
                 Price = updatedOrderDetail.Price,
                 WatchId = updatedOrderDetail.WatchId
             };
+        }
+
+        private  double GetFinalSum(int quantity, double price) 
+        {
+            var finalSum = price * quantity;
+
+            return finalSum;
         }
     }
 }

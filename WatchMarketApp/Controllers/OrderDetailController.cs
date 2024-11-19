@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WatchMarketApp.BusinessLogic.Interfaces;
 using WatchMarketApp.DataAccess.Entities;
 
@@ -15,6 +16,7 @@ namespace WatchMarketApp.Controllers
             _orderDetailService = orderDetailService;
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet("orderDetails")]
         public async Task<IActionResult> GetAll()
         {
@@ -23,6 +25,7 @@ namespace WatchMarketApp.Controllers
             return Ok(orderDetails);
         }
 
+        [Authorize]
         [HttpPost("orderDetail")]
         public async Task<IActionResult> Add([FromBody] OrderDetailDto orderDetailModel)
         {
@@ -31,6 +34,7 @@ namespace WatchMarketApp.Controllers
             return Ok(orderDetail);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut("orderDetail")]
         public async Task<IActionResult> Update([FromBody] OrderDetailDto orderDetailModel)
         {
@@ -39,6 +43,7 @@ namespace WatchMarketApp.Controllers
             return Ok(orderDetail);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("orderDetail")]
         public async Task<IActionResult> Delete(int id)
         {

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WatchMarketApp.BusinessLogic.Dto_s;
 using WatchMarketApp.BusinessLogic.Interfaces;
 
@@ -15,6 +16,7 @@ namespace WatchMarketApp.Controllers
             _watchService = watchService;
         }
 
+        [Authorize]
         [HttpGet("watches")]
         public async Task<IActionResult> GetAll()
         {
@@ -23,6 +25,7 @@ namespace WatchMarketApp.Controllers
             return Ok(watches);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost("watch")]
         public async Task<IActionResult> Add([FromBody] WatchDto watchModel)
         {
@@ -31,6 +34,7 @@ namespace WatchMarketApp.Controllers
             return Ok(watch);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut("watch")]
         public async Task<IActionResult> Update([FromBody] WatchDto watchModel)
         {
@@ -39,6 +43,7 @@ namespace WatchMarketApp.Controllers
             return Ok(watch);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("watch")]
         public async Task<IActionResult> Delete(int id)
         {

@@ -1,8 +1,7 @@
-﻿using WatchMarket.BusinessLogic.Dto_s;
+﻿using Azure.Storage.Blobs;
 using WatchMarketApp.BusinessLogic.Dto_s;
 using WatchMarketApp.BusinessLogic.Interfaces;
 using WatchMarketApp.DataAccess.Entities;
-using WatchMarketApp.DataAccess.Repositories.Implementations;
 using WatchMarketApp.DataAccess.Repositories.Interfaces;
 
 namespace WatchMarketApp.BusinessLogic.Services
@@ -10,6 +9,7 @@ namespace WatchMarketApp.BusinessLogic.Services
     public class WatchService : IWatchService
     {
         private readonly IBaseRepository<Watch> _watchRepository;
+        //private readonly BlobServiceClient blobServiceClient;
         public WatchService(IBaseRepository<Watch> watchRepository)
         {
             _watchRepository = watchRepository;
@@ -38,18 +38,19 @@ namespace WatchMarketApp.BusinessLogic.Services
 
         public async Task DeleteAsync(int id)
         {
-           var watchLooked = await _watchRepository.GetByIdAsync(id)
-                                   ?? throw new Exception("This watch does not exist");
+            var watchLooked = await _watchRepository.GetByIdAsync(id)
+                                    ?? throw new Exception("This watch does not exist");
 
-           await _watchRepository.DeleteAsync(watchLooked); 
+            await _watchRepository.DeleteAsync(watchLooked);
         }
 
         public async Task<List<WatchDto>> GetAllAsync()
         {
             var watches = await _watchRepository.GetAllAsync();
-          
-            var watchDto = watches.Select(watch => new WatchDto 
+
+            var watchDto = watches.Select(watch => new WatchDto
             {
+                Id = watch.Id,
                 Brand = watch.Brand,
                 PriceId = watch.PriceId,
                 ImageUrl = watch.ImageUrl,
@@ -73,6 +74,7 @@ namespace WatchMarketApp.BusinessLogic.Services
 
             return new WatchDto
             {
+                Id = updatedWatch.Id,
                 Brand = updatedWatch.Brand,
                 PriceId = updatedWatch.PriceId,
                 ImageUrl = updatedWatch.ImageUrl,

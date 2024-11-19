@@ -15,8 +15,14 @@ namespace WatchMarketApp.DataAccess.Data
                         .HasOne(w => w.Price)
                         .WithOne(p => p.Watch)
                         .HasForeignKey<Watch>(w => w.PriceId);
+            // Seed Roles
+            modelBuilder.Entity<Role>().HasData(
+                new Role { Id = 1, Name = "Admin" },
+                new Role { Id = 2, Name = "User" }
+            );
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
         public DbSet<Watch> Watches { get; set; }
         public DbSet<Price> Prices { get; set; }
         public DbSet<Comment> Comments { get; set; }

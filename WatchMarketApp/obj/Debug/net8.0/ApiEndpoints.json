@@ -116,6 +116,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WatchMarketApp.Controllers.UserController",
+    "Method": "LogIn",
+    "RelativePath": "watchmarket/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "WatchMarket.BusinessLogic.Dto_s.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WatchMarketApp.Controllers.UserController",
+    "Method": "LogOut",
+    "RelativePath": "watchmarket/logout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WatchMarketApp.Controllers.OrderController",
     "Method": "Update",
     "RelativePath": "watchmarket/order",
@@ -233,8 +259,8 @@
   },
   {
     "ContainingType": "WatchMarketApp.Controllers.UserController",
-    "Method": "Add",
-    "RelativePath": "watchmarket/user",
+    "Method": "Register",
+    "RelativePath": "watchmarket/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

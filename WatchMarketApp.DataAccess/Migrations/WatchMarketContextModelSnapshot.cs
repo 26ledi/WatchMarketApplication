@@ -125,6 +125,35 @@ namespace WatchMarketApp.DataAccess.Migrations
                     b.ToTable("Prices");
                 });
 
+            modelBuilder.Entity("WatchMarketApp.DataAccess.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "User"
+                        });
+                });
+
             modelBuilder.Entity("WatchMarketApp.DataAccess.Entities.User", b =>
                 {
                     b.Property<int>("Id")
@@ -141,11 +170,16 @@ namespace WatchMarketApp.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
@@ -229,6 +263,17 @@ namespace WatchMarketApp.DataAccess.Migrations
                     b.Navigation("Watch");
                 });
 
+            modelBuilder.Entity("WatchMarketApp.DataAccess.Entities.User", b =>
+                {
+                    b.HasOne("WatchMarketApp.DataAccess.Entities.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
             modelBuilder.Entity("WatchMarketApp.DataAccess.Entities.Watch", b =>
                 {
                     b.HasOne("WatchMarketApp.DataAccess.Entities.Price", "Price")
@@ -248,6 +293,11 @@ namespace WatchMarketApp.DataAccess.Migrations
             modelBuilder.Entity("WatchMarketApp.DataAccess.Entities.Price", b =>
                 {
                     b.Navigation("Watch");
+                });
+
+            modelBuilder.Entity("WatchMarketApp.DataAccess.Entities.Role", b =>
+                {
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("WatchMarketApp.DataAccess.Entities.User", b =>

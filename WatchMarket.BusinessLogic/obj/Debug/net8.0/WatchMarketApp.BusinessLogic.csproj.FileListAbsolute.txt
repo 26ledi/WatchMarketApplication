@@ -13,3 +13,4 @@ C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMar
 C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\refint\WatchMarketApp.BusinessLogic.dll
 C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.pdb
 C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\ref\WatchMarketApp.BusinessLogic.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarket.BusinessLogic\obj\Debug\net8.0\WatchMarketApp.BusinessLogic.sourcelink.json

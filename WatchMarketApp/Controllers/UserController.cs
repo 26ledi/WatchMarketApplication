@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WatchMarket.BusinessLogic.Dto_s;
 using WatchMarket.BusinessLogic.Interfaces;
 
@@ -10,21 +11,22 @@ namespace WatchMarketApp.Controllers
     {
         private readonly IUserService _userService;
 
-        public UserController(IUserService userService) 
+        public UserController(IUserService userService)
         {
             _userService = userService;
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet("users")]
-        public async Task<IActionResult> GetAll() 
+        public async Task<IActionResult> GetAll()
         {
-            var users = await _userService.GetAllUsersAsync(); 
+            var users = await _userService.GetAllUsersAsync();
 
             return Ok(users);
         }
 
-        [HttpPost("user")]
-        public async Task<IActionResult> Add([FromBody]UserDto userModel)
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] UserDto userModel)
         {
             var user = await _userService.CreateUserAsync(userModel);
 
@@ -46,5 +48,22 @@ namespace WatchMarketApp.Controllers
 
             return NoContent();
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> LogIn([FromBody] UserDto userModel)
+        {
+            var token = await _userService.LoginAsync(userModel);
+
+            return Ok(new { Token = token });
+        }
+
+        //[HttpGet("logout")]
+        //public IActionResult LogOut()
+        //{
+
+        //    Response.Cookies.Delete("token");
+
+        //    return Ok(new { Message = "User succesfully logged out" });
+        //}
     }
 }

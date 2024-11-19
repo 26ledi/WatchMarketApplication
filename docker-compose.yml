@@ -1,0 +1,13 @@
+services:
+  watchmarketapp:
+    image: ${DOCKER_REGISTRY-}watchmarketapp
+    build:
+      context: .
+      dockerfile: WatchMarketApp/Dockerfile
+  sqlServer:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=Silicon@26!
+    ports:
+      - "1433:1433"

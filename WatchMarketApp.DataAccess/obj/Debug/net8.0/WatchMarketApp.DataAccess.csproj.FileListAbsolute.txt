@@ -12,3 +12,4 @@ C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\refint\W
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.pdb
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.genruntimeconfig.cache
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\ref\WatchMarketApp.DataAccess.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.DataAccess\obj\Debug\net8.0\WatchMarketApp.DataAccess.sourcelink.json
