@@ -65,7 +65,7 @@ namespace WatchMarketApp.Extensions
 
             });
 
-            return builder.Services;
+            return builder.Services; 
         }
 
         public static IServiceCollection AddSwagger(this WebApplicationBuilder builder)
