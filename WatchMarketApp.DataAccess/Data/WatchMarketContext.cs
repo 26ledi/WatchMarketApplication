@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WatchMarketApp.DataAccess.Entities;
+using WatchMarketApp.DataAccess.Tests;
 
 namespace WatchMarketApp.DataAccess.Data
 {
@@ -21,6 +22,11 @@ namespace WatchMarketApp.DataAccess.Data
                 new Role { Id = 2, Name = "User" }
             );
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseInMemoryDatabase("TestDatabase");
+        }
+        public DbSet<TestEntity> TestEntities { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Watch> Watches { get; set; }
