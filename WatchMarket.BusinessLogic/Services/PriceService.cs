@@ -12,6 +12,7 @@ namespace WatchMarketApp.BusinessLogic.Services
         {
             _priceRepository = priceRepository;
         }
+
         public async Task<PriceDto> CreateAsync(PriceDto priceDto)
         {
             var newPrice = new Price

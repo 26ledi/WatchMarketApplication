@@ -14,6 +14,7 @@ namespace WatchMarketApp.BusinessLogic.Services
             _orderDetailRepository = orderDetailRepository;
             _priceRepository = priceRepository;
         }
+
         public async Task<OrderDetailDto> CreateAsync(OrderDetailDto orderDetailDto)
         {
             var newOrderDetail = new OrderDetail
