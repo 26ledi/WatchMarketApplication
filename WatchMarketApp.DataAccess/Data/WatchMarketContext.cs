@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WatchMarketApp.DataAccess.Entities;
-using WatchMarketApp.DataAccess.Tests;
 
 namespace WatchMarketApp.DataAccess.Data
 {
-    public class WatchMarketContext: DbContext
+    public class WatchMarketContext : DbContext
     {
         public WatchMarketContext(DbContextOptions<WatchMarketContext> options) : base(options) { }
 
