@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WatchMarketApp.BusinessLogi
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3F520426-665E-4FC1-B0BA-8F7A7AA67557}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchMarketApp.DataAccess.Tests", "WatchMarketApp.DataAccess.Tests\WatchMarketApp.DataAccess.Tests.csproj", "{AC52DF3B-453C-41C1-B191-53410012DC99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchMarketApp.BusinessLogic.Tests", "WatchMarketApp.BusinessLogic.Tests\WatchMarketApp.BusinessLogic.Tests.csproj", "{7D67134C-1E3A-4C70-A75B-DA7D3DFAB4AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{3F520426-665E-4FC1-B0BA-8F7A7AA67557}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F520426-665E-4FC1-B0BA-8F7A7AA67557}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F520426-665E-4FC1-B0BA-8F7A7AA67557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC52DF3B-453C-41C1-B191-53410012DC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC52DF3B-453C-41C1-B191-53410012DC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC52DF3B-453C-41C1-B191-53410012DC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC52DF3B-453C-41C1-B191-53410012DC99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D67134C-1E3A-4C70-A75B-DA7D3DFAB4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D67134C-1E3A-4C70-A75B-DA7D3DFAB4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D67134C-1E3A-4C70-A75B-DA7D3DFAB4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D67134C-1E3A-4C70-A75B-DA7D3DFAB4AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

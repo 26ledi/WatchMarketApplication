@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WatchMarketApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0206a45ca66e7ae879a335de833dc2e31b3926b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a36757e7c385cf9542dad0d7d259fb42e82b5226")]
 [assembly: System.Reflection.AssemblyProductAttribute("WatchMarketApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WatchMarketApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

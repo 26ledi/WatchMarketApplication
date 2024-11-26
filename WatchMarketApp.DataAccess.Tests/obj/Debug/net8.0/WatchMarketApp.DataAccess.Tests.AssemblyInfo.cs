@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WatchMarketApp.DataAccess.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+223e7f87af1debc176775d550b510379027c92d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a36757e7c385cf9542dad0d7d259fb42e82b5226")]
 [assembly: System.Reflection.AssemblyProductAttribute("WatchMarketApp.DataAccess.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WatchMarketApp.DataAccess.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

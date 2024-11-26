@@ -132,16 +132,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WatchMarketApp.Controllers.UserController",
-    "Method": "LogOut",
-    "RelativePath": "watchmarket/logout",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "WatchMarketApp.Controllers.OrderController",
     "Method": "Update",
     "RelativePath": "watchmarket/order",

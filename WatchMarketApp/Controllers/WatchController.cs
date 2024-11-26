@@ -16,7 +16,6 @@ namespace WatchMarketApp.Controllers
             _watchService = watchService;
         }
 
-        [Authorize]
         [HttpGet("watches")]
         public async Task<IActionResult> GetAll()
         {

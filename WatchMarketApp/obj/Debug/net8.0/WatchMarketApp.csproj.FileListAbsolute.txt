@@ -153,3 +153,4 @@ C:\Joyce Ledi\WatchMarketApp\WatchMarketApp\bin\Debug\net8.0\Microsoft.Extension
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp\bin\Debug\net8.0\System.ClientModel.dll
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp\bin\Debug\net8.0\System.IO.Hashing.dll
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll

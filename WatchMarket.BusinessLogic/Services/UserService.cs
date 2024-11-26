@@ -94,7 +94,7 @@ namespace WatchMarket.BusinessLogic.Services
         }
         private User SetUserRole(User user)
         {
-            user.RoleId = -2;
+            user.RoleId = 2;
 
             return user;
         }
