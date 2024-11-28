@@ -10,4 +10,17 @@ services:
             - ACCEPT_EULA=Y
             - SA_PASSWORD=Silicon@26!
     ports:
-      - "1433:1433"  
+      - "1433:1433"
+  azurite:
+      image: mcr.microsoft.com/azure-storage/azurite
+      command: azurite --loose --blobHost 0.0.0.0 --blobPort 10000 --queueHost 0.0.0.0 --queuePort 10001
+      hostname: azurite
+      ports:
+          - 10010:10000
+          - 10001:10001
+          - 10002:10002
+      volumes:
+           - azuriteData:/data
+      restart: on-failure
+volumes:
+  azuriteData:

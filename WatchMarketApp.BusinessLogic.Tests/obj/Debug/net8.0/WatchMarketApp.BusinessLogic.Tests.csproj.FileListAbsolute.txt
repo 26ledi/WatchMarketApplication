@@ -163,3 +163,5 @@ C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.BusinessLogic.Tests\obj\Debug\net8.0
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.BusinessLogic.Tests\obj\Debug\net8.0\ref\WatchMarketApp.BusinessLogic.Tests.dll
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.BusinessLogic.Tests\bin\Debug\net8.0\AutoFixture.dll
 C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.BusinessLogic.Tests\bin\Debug\net8.0\Fare.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.BusinessLogic.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Joyce Ledi\WatchMarketApp\WatchMarketApp.BusinessLogic.Tests\bin\Debug\net8.0\System.IO.Pipelines.dll

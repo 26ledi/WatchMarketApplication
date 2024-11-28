@@ -8,10 +8,11 @@ namespace WatchMarketApp.BusinessLogic.Services
 {
     public class WatchService : IWatchService
     {
-        private readonly IBaseRepository<Watch> _watchRepository;
-        //private readonly BlobServiceClient blobServiceClient;
-        public WatchService(IBaseRepository<Watch> watchRepository)
+        private readonly IBaseRepository<Watch> _repository;
+        private readonly IWatchRepository _watchRepository;
+        public WatchService(IBaseRepository<Watch> repository, IWatchRepository watchRepository)
         {
+            _repository = repository;
             _watchRepository = watchRepository;
         }
 
@@ -25,7 +26,7 @@ namespace WatchMarketApp.BusinessLogic.Services
                 Weight = watch.Weight,
             };
 
-            await _watchRepository.AddAsync(newWatch);
+            await _repository.AddAsync(newWatch);
 
             return new WatchDto
             {
@@ -38,10 +39,10 @@ namespace WatchMarketApp.BusinessLogic.Services
 
         public async Task DeleteAsync(int id)
         {
-            var watchLooked = await _watchRepository.GetByIdAsync(id)
+            var watchLooked = await _repository.GetByIdAsync(id)
                                     ?? throw new Exception("This watch does not exist");
 
-            await _watchRepository.DeleteAsync(watchLooked);
+            await _repository.DeleteAsync(watchLooked);
         }
 
         public async Task<List<WatchDto>> GetAllAsync()
@@ -52,7 +53,7 @@ namespace WatchMarketApp.BusinessLogic.Services
             {
                 Id = watch.Id,
                 Brand = watch.Brand,
-                PriceId = watch.PriceId,
+                Amount = watch.Price.Amount,
                 ImageUrl = watch.ImageUrl,
                 Weight = watch.Weight,
             }).ToList();
@@ -62,7 +63,7 @@ namespace WatchMarketApp.BusinessLogic.Services
 
         public async Task<WatchDto> Updatesync(WatchDto watch)
         {
-            var watchLooked = await _watchRepository.GetByIdAsync(watch.Id)
+            var watchLooked = await _repository.GetByIdAsync(watch.Id)
                             ?? throw new Exception("This watch does not exist");
 
             watchLooked.Brand = watch.Brand;
@@ -70,7 +71,7 @@ namespace WatchMarketApp.BusinessLogic.Services
             watchLooked.ImageUrl = watch.ImageUrl;
             watchLooked.Weight = watch.Weight;
 
-            var updatedWatch = await _watchRepository.UpdateAsync(watchLooked);
+            var updatedWatch = await _repository .UpdateAsync(watchLooked);
 
             return new WatchDto
             {
